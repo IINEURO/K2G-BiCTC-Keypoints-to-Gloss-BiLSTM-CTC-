@@ -50,7 +50,7 @@ pip install -e .
 
 ## 数据集准备
 
-本仓库不包含 CE-CSL 数据，请将数据放到以下目录：
+本仓库不包含 CE-CSL 数据集，该数据集为开源数据集可在github找到，请将数据集下载并放到以下目录：
 
 ```text
 data/raw/CE-CSL/
