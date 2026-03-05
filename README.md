@@ -1,6 +1,6 @@
 # K2G-BiCTC
 
-K2G-BiCTC（Keypoints-to-Gloss + BiLSTM+CTC）是一个句子级手语识别基线项目，采用
+K2G-BiCTC（Keypoints-to-Gloss + BiLSTM+CTC）是一个句级连续手语识别项目，采用
 `MediaPipe 关键点 + BiLSTM + CTC` 的技术路线，并按 CE-CSL 风格组织数据。
 
 本仓库目标是手语识别（gloss 序列预测），不是自然语言流畅翻译。
