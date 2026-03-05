@@ -1,4 +1,4 @@
-# K2G-BiCTC
+# K2G-BiCTC连续手语识别
 
 K2G-BiCTC（Keypoints-to-Gloss + BiLSTM+CTC）是一个句级连续手语识别项目，采用
 `MediaPipe 关键点 + BiLSTM + CTC` 的技术路线，并按 CE-CSL 风格组织数据。
