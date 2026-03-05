@@ -1,0 +1,36 @@
+# Python cache/build
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+.env
+.env.*
+
+# Editor/OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Project artifacts
+outputs/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.npz
+
+# Dataset files (keep out of git)
+data/raw/
+data/meta/
+data/processed/

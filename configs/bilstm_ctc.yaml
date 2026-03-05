@@ -1,0 +1,39 @@
+seed: 3407
+
+data:
+  raw_root: data/raw/CE-CSL
+  manifest_path: data/meta/manifest.jsonl
+  vocab_path: data/meta/vocab.json
+  processed_root: data/processed
+  normalize: true
+  use_velocity: true
+
+extract:
+  num_workers: 4
+  overwrite: false
+  frame_stride: 1
+  max_frames: 0
+
+model:
+  name: bilstm_ctc
+  proj_dim: 192
+  hidden_size: 192
+  num_layers: 2
+  dropout: 0.3
+
+train:
+  epochs: 100
+  batch_size: 8
+  num_workers: 4
+  best_metric: seq_acc
+  early_stop_patience: 12
+  early_stop_min_delta: 0.0
+  lr: 1e-3
+  weight_decay: 5e-3
+  scheduler: cosine
+  min_lr: 1e-5
+  grad_clip: 5.0
+  device: auto
+
+output:
+  ckpt_dir: outputs/checkpoints
